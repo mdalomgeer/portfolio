@@ -1,103 +1,137 @@
+/* LARGE SCREENS - MAX WIDTH 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; /* Reduce extra space */
   }
+
   .about-containers {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Ensure the layout wraps neatly */
   }
+
   #contact,
   #projects {
-    height: fit-content;
+    height: fit-content; /* Adjust to content height */
   }
 }
 
+/* MEDIUM SCREENS - MAX WIDTH 1200px */
 @media screen and (max-width: 1200px) {
+  /* Hide Desktop Nav and Show Mobile Hamburger */
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
   }
+
+  /* Adjust experience and profile layout */
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
   #profile,
   .section-container {
-    display: block;
+    display: block; /* Stack sections vertically */
   }
+
+  /* Hide arrow icon */
   .arrow {
     display: none;
   }
+
+  /* Adjust section margins for smaller screens */
   section,
   .section-container {
     height: fit-content;
   }
   section {
-    margin: 0 5%;
+    margin: 0 5%; /* Reduce left-right margin for better fit */
   }
+
+  /* Resize images and profile picture */
   .section__pic-container {
     width: 275px;
     height: 275px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 2rem; /* Center align and adjust margin */
   }
+
   .about-containers {
     margin-top: 0;
   }
 }
 
+/* SMALL SCREENS - MAX WIDTH 600px */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 40vh; /* Reduce height of contact and footer */
   }
+
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
+
+  /* Reduce font size in articles */
   article {
     font-size: 1rem;
   }
+
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Add spacing at the bottom */
   }
+
+  /* Wrap content in containers */
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+
   .contact-info-container {
     margin: 0;
   }
+
+  /* Reduce font size for better readability */
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Smaller subtitles */
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
+  /* Stack navigation links vertically */
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+
+  /* Resize profile picture container */
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 46vw; /* Dynamic width for responsiveness */
     justify-content: center;
   }
+
+  /* Adjust text sizes for small screens */
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
   .title {
-    font-size: 2rem;
+    font-size: 2rem; /* Smaller title on small screens */
   }
+
   .text-container {
-    text-align: justify;
+    text-align: justify; /* Adjust text alignment */
   }
 }
